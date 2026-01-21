@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nutrition</title>
+        <link href="../images/logo.png" type="" rel="icon">
+
+     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+NO:wght@100..400&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+ <style>  
+ .btn{
+  background-color:  #04aa6d;
+  border-radius: 20px;
+ }    
+  </style> 
+</head>
+<body>
+   <header>
+            <nav class="navbar navbar-expand-lg sticky-top ">
+                <div class="container">
+                    <a class="navbar-brand" href="#">Healthy Life </a>
+
+                    
+                    <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#main"
+                        aria-controls="#main"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                    >
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="main">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link p-2 p-lg-3  active" aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link  p-2 p-lg-3" href="About.html"> About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link p-2 p-lg-3" href="lifeStyle.html">Life Style</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link  p-2 p-lg-3" href="Sign.html">Sign In</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link p-2 p-lg-3 " href="nutrition.html">Nutrition</a>
+                            </div>
+                        </ul>
+                         
+                         
+                    </div>
+                </div>
+            </nav>
+        </header> 
+        <section>
+            <!-- Header -->
+<section class="page-header">
+  <h1>Nutrition (التغذية)</h1>
+  <p>Healthy food habits for a balanced life</p>
+</section>
+
+<!-- Cards Section -->
+<section class="container my-5">
+  <div class="row g-4">
+
+    <!-- Card 1 -->
+    <div class="col-md-4">
+      <div class="nutrition-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/3075/3075977.png" alt="Proteins">
+         <h4>Proteins</h4>
+        <p>Essential for building muscles and repairing tissues.</p>
+        <p class="more-text">Include sources like chicken, fish, eggs, beans, and nuts in your daily meals.</p>
+        <button class="btn btn-sm btn-read" onclick="toggleText(this)">Read More</button>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="col-md-4">
+      <div class="nutrition-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/3081/3081650.png" alt="Carbohydrates">
+        <h4>Carbohydrates</h4>
+        <p>Main source of energy for your body and brain.</p>
+        <p class="more-text">Choose whole grains like oats, rice, and whole wheat bread for sustained energy.</p>
+        <button class="btn btn-sm  btn-read" onclick="toggleText(this)">Read More</button>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="col-md-4">
+      <div class="nutrition-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/1038/1038077.png" alt="Vitamins">
+        <h4>Vitamins & Minerals</h4>
+        <p>Keep your immune system strong and body healthy.</p>
+        <p class="more-text">Eat colorful fruits and vegetables to get a variety of vitamins and minerals.</p>
+        <button class="btn btn-sm btn-read" onclick="toggleText(this)">Read More</button>
+      </div>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="col-md-4">
+      <div class="nutrition-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/1046/1046857.png" alt="Fruits">
+        <h4>Fruits & Vegetables</h4>
+        <p>Provide fiber, vitamins, and antioxidants.</p>
+        <p class="more-text">Aim for at least 5 servings per day, fresh or lightly cooked.</p>
+        <button class="btn btn-sm btn-read" onclick="toggleText(this)">Read More</button>
+      </div>
+    </div>
+
+    <!-- Card 5 -->
+    <div class="col-md-4">
+      <div class="nutrition-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/2582/2582681.png" alt="Water">
+        <h4>Water</h4>
+        <p>Stay hydrated to maintain energy and focus.</p>
+        <p class="more-text">Drink 6–8 glasses daily and more if you exercise or it’s hot.</p>
+        <button class="btn btn-sm btn-read" onclick="toggleText(this)">Read More</button>
+      </div>
+    </div>
+
+    <!-- Card 6 -->
+    <div class="col-md-4">
+      <div class="nutrition-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/1404/1404945.png" alt="Healthy Fats">
+        <h4>Healthy Fats</h4>
+        <p>Important for brain function and hormone balance.</p>
+        <p class="more-text">Include olive oil, avocado, nuts, and seeds in moderation.</p>
+        <button class="btn btn-sm btn-read" onclick="toggleText(this)">Read More</button>
+      </div>
+    </div>
+
+  </div>
+</section>
+<!-- ============================================================================== -->
+<p class="final-text">
+  Healthy nutrition is the foundation of a healthy life, and your daily food choices are the key to a stronger body and a better life.
+</p>
+
+<!-- ============================================================================== -->
+        <footer class="section-p1">
+            <div class="col">
+                <img src="img/logo.png" class="logo" alt="">
+                <h4>Contact Us</h4>
+                <p>
+                    <strong>Address:</strong>
+                    Alexandria Borg Al-arab
+                </p>
+                <p>
+                    <strong>Phone:</strong>
+                    +20 01032157496 /(+20)  01551864108
+                </p>
+                <p>
+                    <strong>Hours:</strong>
+                    10:00 - 18:00 , Sat - Thur
+                </p>
+                <div class="follow">
+                    <h4>Follow Healthy Life</h4>
+                    <div class="icon">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-pinterest-p"></i>
+                        <i class="fa-brands fa-youtube"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <h4>About Healthy Life</h4>
+                <a href="#">About</a>
+                 <a href="#">Privecy Policy</a>
+                <a href="#">Terms & Conditions</a>
+                <a href="#">Contact us</a>
+            </div>
+            
+            </div>
+            <div class="copyrights">
+                <p>
+                    Designed and Developed By
+                    <a target="_blank" href="#">Saida Elsadaawy</a>
+                </p>
+            </div>
+        </footer>
+
+<!-- JavaScript for Read More -->
+<script>
+  function toggleText(btn) {
+    const moreText = btn.previousElementSibling;
+    if (moreText.style.display === "none" || moreText.style.display === "") {
+      moreText.style.display = "block";
+      btn.innerText = "Read Less";
+    } else {
+      moreText.style.display = "none";
+      btn.innerText = "Read More";
+    }
+  }
+</script>
+        </section>
+        
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/all.min.js"></script>
+ </body>
+</html>

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Sign In</title>
+    <link href="../images/logo.png" type="" rel="icon">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/all.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playwrite+NO:wght@100..400&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <style> 
+       body {
+      background: linear-gradient(to right, #4CAF50, #2e8b57);
+       }
+      </style>
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-lg sticky-top ">
+                <div class="container">
+                    <a class="navbar-brand" href="#">Healthy Life</a>
+                    <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#main"
+                        aria-controls="#main"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                    >
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="main">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link p-2 p-lg-3  active" aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link  p-2 p-lg-3" href="About.html"> About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link p-2 p-lg-3" href="lifeStyle.html">Life Style</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link  p-2 p-lg-3" href=" sign.html">Sign In</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link p-2 p-lg-3 " href="nutrition.html">Nutrition</a>
+                            </div>
+                        </ul>
+                         
+                 </div>
+            </nav>
+        </header>
+        <!-- =============================================================================== -->
+        <section class="form">
+            <div class="login-box">
+                <h1>Sign In</h1>
+                <form onsubmit="return validateForm()">
+                    <!-- Email -->
+                    <div class="mb-4">
+                        <label class="form-label">Email address</label>
+                        <input
+                            type="email"
+                            id="email"
+                            class="form-control"
+                            placeholder="Enter email"
+                        >
+                        <div id="emailError" class="error">Please enter your email</div>
+                    </div>
+                    <!-- Password -->
+                    <div class="mb-4">
+                        <label class="form-label">Password</label>
+                        <input
+                            type="password"
+                            id="password"
+                            class="form-control"
+                            placeholder="Enter password"
+                        >
+                        <div id="passwordError" class="error">Please enter your password</div>
+                    </div>
+                    <!-- Remember Me -->
+                    <div class="form-check mb-4">
+                        <input type="checkbox" class="form-check-input" id="remember">
+                        <label class="form-check-label">Remember me</label>
+                    </div>
+                    <!-- Button -->
+                    <button type="submit" class="btn btn-success ">Sign In</button>
+                    <!-- Links -->
+                    <div class="text-center mt-4">
+                        <a href="#" class="text-success">Forgot Password?</a>
+                        <br>
+                        <span>
+                            Don't have an account?
+                            <a href="#" class="text-success">Sign Up</a>
+                        </span>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <!-- ==================================================================== -->
+        
+        <footer class="section-p1">
+            <div class="col">
+                <img src="img/logo.png" class="logo" alt="">
+                <h4>Contact Us</h4>
+                <p>
+                    <strong>Address:</strong>
+                    Alexandria Borg Al-arab
+                </p>
+                <p>
+                    <strong>Phone:</strong>
+                    +20 01032157496 /(+20)  01551864108
+                </p>
+                <p>
+                    <strong>Hours:</strong>
+                    10:00 - 18:00 , Sat - Thur
+                </p>
+                <div class="follow">
+                    <h4>Follow Healthy Life</h4>
+                    <div class="icon">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-pinterest-p"></i>
+                        <i class="fa-brands fa-youtube"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <h4>About Healthy Life</h4>
+                <a href="#">About</a>
+                <a href="#">Privecy Policy</a>
+                <a href="#">Terms & Conditions</a>
+                <a href="#">Contact us</a>
+            </div>
+        </div>
+        <div class="copyrights">
+            <p>
+                Designed and Developed By
+                <a target="_blank" href="#">Saida Elsadaawy</a>
+            </p>
+        </div>
+    </footer>
+    <script>  
+  function validateForm() {
+    let email = document.getElementById("email").value;
+    let password = document.getElementById("password").value;
+
+    let emailError = document.getElementById("emailError");
+    let passwordError = document.getElementById("passwordError");
+
+    emailError.style.display = "none";
+    passwordError.style.display = "none";
+
+    if (email === "") {
+      emailError.style.display = "block";
+      return false;
+    }
+
+    if (password === "") {
+      passwordError.style.display = "block";
+      return false;
+    }
+
+    alert("Login Successful (Demo)");
+    return false; 
+  }
+    </script>
+</section>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/all.min.js"></script>
+ </body>
+</html>
